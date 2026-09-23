@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PetDox</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+      
+    
+  <body>
+  
+<main>  
+  <h1 id="titulo-de-app">PetDox</h1>
+ 
+        <a href="#parrafo-1">Parrafo1</a>
+          <hr>
+        <a href="#parrafo-2">Parrafo2</a>
+        <a href="#parrafo-3">Parrafo3</a>
+        <a href="#parrafo-4">Parrafo4</a>
+        
+
+        <h2>Imagenes de perros:</h2>
+        <p>Clip para ver mas <a href="https://www.purina.es/encuentra-mascota/razas-de-perro" target="_blank">imagenes de perros</a></p>
+      <button type="button">Mas</button>
+        <a href="https://www.purina.es/encuentra-mascota/razas-de-perro">
+        <img src="imagenes/perro-waton.jpg" class="bordes-redondos" alt="Perro descansando" height="300"></a>
+     <div class="contenedor-listas">
+      <p style="color: blue;">Cosas que los perros <EM>aman:</EM></p>
+      <ul style="color: blue;" id="perros-aman" class="lista-perros">
+        <li>Las pelotas</li>
+        <li>Los humanos</li>
+        <li>Comer</li>
+      </ul>
+      <img src="imagenes/download.jpg" class="bordes-redondos" alt="Perro sentado mirando a la camara" height="300" >
+      
+        <p style="color: blue;">Cosas que los perros <strong>odian</strong>:</p>
+        <ol style="color: blue;" id= "perros-odian" class="lista-perros">
+          <li>No comer</li>
+          <li>Los gatos</li>
+          <li><s>Los humanos</s></li>
+        </ol>
+          <img src= "imagenes/perros-energicos.webp" class="Imagen-de-perros"
+          alt="Perros jugando y corriendo" height="299">
+  </div>
+  <hr>
+  <form action="/enviar-respuestas">
+      <!---Botones de radio-->
+      <label for="interior"><input value="Interior" 
+        name="interior-exterior" id="interior" type="radio">Interior
+      </label>
+   <br>
+      <label for="exterior"><input  value="Exterior"
+        checked name="interior-exterior" id= "exterior" type="radio">Exterior
+      </label>
+    <br>
+    <!--Casillas de verificacion-->
+    <label for="amigable"><input name="personalidad"
+        id="amigable" type="checkbox" value="Amigable">Amigable 
+    </label>
+      <label for="energico"><input checked name="personalidad" 
+        id="energico" type="checkbox" value="Energico">Energico</label>
+      <label for="perezoso"><input name="personalidad"  id="perezoso" 
+      type="checkbox" value="perezoso">Perezoso</label>
+    <!--TEXto y boton de ennviar-->
+    <label> <input placeholder="Url de foto de tu perro" type="text" required> </label>
+
+      <button type="submit"> Enviar </button>
+  </form>
+ <footer> <small>Copyright 2025 </small></footer>
+</main>
+  </body>  
+  
+ 
+</html>
